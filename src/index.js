@@ -70,11 +70,13 @@ ReactDOM.render(
               />
             ]}
             extra={
-              <img
-                width={200}
-                alt="logo"
-                src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
-              />
+              <>
+                <img
+                  width={180}
+                  alt="logo"
+                  src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+                />
+              </>
             }
           >
             <List.Item.Meta

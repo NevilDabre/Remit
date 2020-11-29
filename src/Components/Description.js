@@ -1,6 +1,6 @@
 import React from "react";
-import { Collapse, Rate, Space } from "antd";
-
+import { Collapse, Rate, Space, Typography } from "antd";
+const { Title } = Typography;
 const { Panel } = Collapse;
 
 const text = `
@@ -14,8 +14,10 @@ const Description = () => {
     <Collapse ghost expandIconPosition={"right"}>
       <Panel
         header={
-          <Space>
-            <a href="https://remitbee.com">Remitbee</a>
+          <Space align="center">
+            <span style={{ fontSize: "large" }} className="ant-rate-text">
+              <a href="https://remitbee.com">Remitbee</a>
+            </span>
             <Rate />
           </Space>
         }
