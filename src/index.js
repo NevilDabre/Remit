@@ -14,6 +14,7 @@ import {
 
 import RateComponent from "./Components/Rate";
 import Description from "./Components/Description";
+import HeaderComponent from "./Components/Header";
 
 const listData = [];
 for (let i = 0; i < 23; i++) {
@@ -46,14 +47,15 @@ ReactDOM.render(
       pageSize: 3
     }}
     dataSource={listData}
-    footer={
-      <div>
-        <b>ant design</b> footer part
-      </div>
-    }
+    // footer={
+    //   // <div>
+    //   //   <b>ant design</b> footer part
+    //   // </div>
+    // }
     renderItem={(item) => (
       <Row>
         <Col lg={{ span: 12, offset: 6 }}>
+          <HeaderComponent />
           <List.Item
             key={item.title}
             actions={[
